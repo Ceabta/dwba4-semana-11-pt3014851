@@ -1,0 +1,129 @@
+* {box-sizing:border-box}
+.corpo{
+    float: right;
+    width: 100%;
+}
+/* Carrossel container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border: 2px solid;
+  overflow: hidden;
+}
+/* Escondendo as imagens */
+.mySlides {
+  display: none;
+}
+/* Botões */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 102, 51,0.3);
+  transform: translateX(-50px);
+}
+/* Botão de próximo */
+.next {
+  transform: translateX(50px);
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.slideshow-container:hover .prev,
+.slideshow-container:hover .next{
+  transform: translateX(0px);
+}
+/* Ao passar por cima gera uma sombra */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 102, 51,0.8);
+}
+/* Texto das imagens */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  left: 25%;
+  position: absolute;
+  bottom: 8px;
+  width: 50%;
+  border-radius: 50px;
+  text-align: center;
+  background-color: rgba(0, 102, 51,0.5);
+  transition: 0.6s ease;
+  transform: translateY(50px);
+}
+.slideshow-container:hover .text,
+.slideshow-container:hover .numbertext{
+  transform: translateY(0px);
+}
+/* Numeros das imagens */
+.numbertext {
+  color: #353434;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transition: 0.6s ease;
+  transform: translateY(-50px);
+}
+/* Circulos indicadores de imagem */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(0, 77, 0);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgb(128, 255, 128);
+}
+
+/* Animação de Fading */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.grid-container{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+}
+.grid-item{
+    font-size: 12px;
+    padding: 0;
+    text-align: center;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+  
+figure {
+    display: inline-block;
+    margin: 20px;
+}
+p {
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="form.css">
+        <title>Eventos - IFSP - Pirituba - DWBA4</title>
+    </head>
+<body>
+    <header id="cabecalho" style="margin: 8px 8px 0px 8px;">
+        <div id="menu"></div>
+    </header>
+    
+    <main>
+        
+        <form method="post" class="form_entrar" align="center">
+            <img class="mb-4" src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/ifsp.png?raw=true" width="72px" height="72px">
+            <h3 class="font-weight-normal">Faça Login</h3>
+            <input type="text" id="entrar-usuario" placeholder="Email" required>
+            <input type="password" id="entrar-senha" placeholder="Senha" required>        
+            <label class="mb-3" for="lembrar-de-mim">
+                <input type="checkbox" name="lembrar" id="lembrar">
+                Lembrar de mim
+            </label>  
+            <br>
+            <a href="esqueci_senha.html" style="text-decoration: none">Esqueci a Senha</a>
+            <button type="submit" style="background: #007bff">Login</button>
+            <br>
+            <p class="mt-5 mb-3 text-muted">© 2022</p>
+        </form>
+    </main>
+
+    <footer>
+        <object width="100%" height="200px" data="rodape.html"></object>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $.get( "menu.html", function( data ) {
+              $( "#menu" ).html( data );
+            });
+        });
+    </script>
+</body>
+</html>

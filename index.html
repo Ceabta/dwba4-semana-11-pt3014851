@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>HOME - IFSP - Pirituba - DWBA4</title>
+</head>
+<body>
+    <header id="topo">
+        <div id="menu"></div>
+    </header>
+
+    <main class="corpo">
+        <br>
+        <!-- Carrossel -->
+        <div class="slideshow-container">
+            <!-- Imagens com numeração e texto -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/A.png?raw=true" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/B.jpg?raw=true" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/C.jpg?raw=true" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <h1>Conheça os desafios de inovação<h1>
+                <p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+            </div>
+        
+            <!-- Botões -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- Circulos relativo a imagem -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <figure><img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/eleicoes.jpg"></figure>
+                <b>Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</b>
+                <br>
+                Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus
+            </div>
+            <div class="grid-item">
+                <figure><img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/snct.jpg"></figure>
+                <b>IFSP: SNCT reúne atividades entre 19 e 24 de outubro</b>
+                <br>
+                Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais
+            </div>
+            <div class="grid-item">
+                <figure><img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/residencia.png"></figure>
+                <br>
+                <b>IFSP oferece bolsa aos voluntários da Residência Pedagógica</b>
+                <br>
+                Bolsa de R$ 400,00 será paga pelo período de três meses
+            </div>
+            <div class="grid-item">
+                <figure><img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/maratona.jpeg"></figure>
+                <br>
+                <b>Inscrições abertas para a III Maratona InterIF</b>
+                <br>
+                Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de outubro
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <br><br>
+        <!-- <a href="#topo" ><img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/77770610c0de515c6150e899d70445ff3d25094d/MoveTop.png" title="Mover para o Topo" alt="Mover para o Topo" width="41px" height="43px"></a> -->
+        <object width="100%" height="200px" data="rodape.html"></object>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $.get( "menu.html", function( data ) {
+              $( "#menu" ).html( data );
+            });
+        });
+    </script>
+</body>
+</html>
